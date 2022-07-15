@@ -11,40 +11,51 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header>
-			<a class="link" href="" lang="en"
+		<header class="page-header" class="container">
+			<a class="logo-link" href="" lang="en"
 				><span class="logo-one">Web</span><span class="logo-two">Studio</span>
 			</a>
 			<nav class="site-nav">
-				<ul class="list">
-					<li><a class="link" href="./index.html">Студия</a></li>
+				<ul class="site-nav-list">
 					<li>
-						<a class="link" href="./portfolio.html" id="curent">Портфолио</a>
+						<a href="./index.html">Студия</a>
 					</li>
-					<li><a class="link" href="">Контакты</a></li>
+					<li>
+						<a href="./portfolio.html" class="curent">Портфолио</a>
+					</li>
+					<li><a href="">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="contacts">
-				<ul class="list">
+				<ul class="contacts-list">
 					<li>
-						<a class="link" href="mailto:info@devstudio.com"
+						<a class="contacts-mail" href="mailto:info@devstudio.com"
 							>info@devstudio.com</a
 						>
 					</li>
 					<li>
-						<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+						<a class="contacts-phone" href="tel:+380961111111"
+							>+38 096 111 11 11</a
+						>
 					</li>
 				</ul>
 			</div>
 		</header>
 		<main>
 			<!--Filter-->
-			<section>
-				<h2 class="visually-hidden">Фильтр</h2>
-				<ul class="list">
+			<section class="filter" class="container">
+				<h2 class="visually-hidden" class="filter-title">Фильтр</h2>
+				<ul class="btn-group">
 					<li><button class="portfolio-btn" type="button">Все</button></li>
 					<li>
 						<button class="portfolio-btn" type="button">Веб-сайты</button>
@@ -59,9 +70,9 @@
 				</ul>
 				<!--Hero-->
 				<h1 class="visually-hidden">Work examples</h1>
-				<ul class="list">
+				<ul class="portfolio-hero-items">
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-1.jpg"
 								alt="три карточки на экране ноутбука"
@@ -72,7 +83,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-2.jpg"
 								alt="два баскетболиста в прыжке"
@@ -85,7 +96,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-3.jpg"
 								alt="эмблема рыба головой вверх"
@@ -96,7 +107,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-4.jpg"
 								alt="наушники"
@@ -107,7 +118,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-5.jpg"
 								alt="белая побольше коробка и кирпичного цвета коробка поменьше"
@@ -118,7 +129,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-6.jpg"
 								alt="монитор с изображением на экране"
@@ -129,7 +140,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-7.jpg"
 								alt="журнал"
@@ -140,7 +151,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-8.jpg"
 								alt="бирка"
@@ -151,7 +162,7 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="">
+						<a href="">
 							<img
 								src="./images/portfolio/portfolio-img-9.jpg"
 								alt="печатают на ноутбуке"
@@ -164,16 +175,16 @@
 				</ul>
 			</section>
 		</main>
-		<footer class="page-footer">
-			<a class="link" href="" lang="en"
+		<footer class="container">
+			<a class="logo-link" href="" lang="en"
 				><span class="logo-one">Web</span
 				><span class="logo-second">Studio</span></a
 			>
-			<address class="here">
-				<ul class="list">
+			<address>
+				<ul>
 					<li>
 						<a
-							class="physical-address link"
+							class="physical-address"
 							href="https://goo.gl/maps/bM6Af7gsELZ9MnHW7"
 							target="_blank"
 							rel="nofollow noopener noreferrer"
@@ -181,12 +192,10 @@
 						</a>
 					</li>
 					<li>
-						<a class="link" href="mailto:info@devstudio.com"
-							>info@devstudio.com</a
-						>
+						<a href="mailto:info@devstudio.com">info@devstudio.com</a>
 					</li>
 					<li>
-						<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+						<a href="tel:+380961111111">+38 096 111 11 11</a>
 					</li>
 				</ul>
 			</address>
