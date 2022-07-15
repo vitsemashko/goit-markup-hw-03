@@ -30,6 +30,8 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
+	max-width: 1600px;
+	max-height: 2349px;
 }
 a {
 	text-decoration: none;
