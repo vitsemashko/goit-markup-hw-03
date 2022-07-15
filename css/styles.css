@@ -24,7 +24,7 @@
 	--portfolio-border-color: #eeeeee;
 }
 body {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	background-color: var(--bcg-color-one);
 	width: 1230px;
 	padding-left: 15px;
