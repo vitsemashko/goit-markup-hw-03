@@ -29,10 +29,10 @@ body {
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin: 0 auto;
 }
 a {
 	text-decoration: none;
+	display: inline-block;
 }
 ul {
 	list-style-type: none;
@@ -55,7 +55,6 @@ button {
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin: 0 auto;
 }
 section {
 	padding-top: 94px;
@@ -64,6 +63,11 @@ section {
 address {
 	font-style: normal;
 }
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 /*Header*/
 header {
 	margin: 0;
@@ -71,7 +75,6 @@ header {
 .page-header .container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	border-bottom: 1px solid var(--header-border-color);
 }
 .page-header {
@@ -91,18 +94,15 @@ header {
 .contacts-list {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
-.site-nav li {
-	margin-right: 50px;
-}
-.site-nav-contacts {
+.site-nav-contacts a {
 	margin-right: auto;
 }
 .contacts a {
 	display: inline-block;
 	padding: 20px;
 }
+
 /*Visually hidden*/
 .visually-hidden {
 	position: absolute;
@@ -120,7 +120,7 @@ header {
 .logo-link {
 	display: flex;
 	padding-left: 215px;
-	margin-right: 93px;
+	margin-right: 50px;
 }
 .logo-one {
 	font-family: "Raleway", sans-serif;
@@ -153,10 +153,6 @@ header {
 	color: var(--bcg-color-one);
 }
 /*Site-nav*/
-.site-nav {
-	height: 16px;
-	width: 294px;
-}
 .site-nav a {
 	font-style: normal;
 	font-weight: 500;
@@ -164,6 +160,7 @@ header {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--primary-color);
+	padding: 20px;
 }
 .site-nav a:hover,
 .site-nav a:focus {
@@ -172,6 +169,10 @@ header {
 .site-nav .curent {
 	color: var(--accent-color);
 }
+.site-nav-list a:not(:last-child) {
+	margin-right: 50px;
+}
+
 /*Contacts*/
 .contacts a {
 	font-style: normal;
@@ -190,8 +191,9 @@ header {
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
 }
-.contacts-list li {
+.contacts-list a {
 	margin-left: auto;
+	margin-right: auto;
 }
 /*Studio Hero*/
 .studio-hero {
@@ -290,7 +292,9 @@ header {
 }
 .what-do-we-do-list {
 	display: flex;
-	justify-content: space-between;
+}
+.what-do-we-do-list li {
+	margin-right: 30px;
 }
 /*Team*/
 .team {
@@ -299,7 +303,6 @@ header {
 }
 .team-list {
 	display: flex;
-	justify-content: space-between;
 	margin-top: 50px;
 }
 .team-title {
@@ -315,12 +318,20 @@ header {
 	display: inline;
 	margin-bottom: 50px;
 }
+.team-item img {
+	margin-bottom: 30px;
+}
 .team-item {
 	background-color: var(--bcg-color-one);
 	width: 270px;
 	height: 368px;
 
-	display: inline-block;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+	margin-right: 30px;
 }
 .team-person {
 	font-style: normal;
@@ -368,6 +379,7 @@ address a {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--address-link-color);
+	margin-bottom: 10px;
 }
 address a:hover,
 address a:focus {
@@ -375,6 +387,7 @@ address a:focus {
 }
 address ul {
 	margin-top: 10px;
+
 	padding-left: 215px;
 }
 /*Filter*/
@@ -442,4 +455,7 @@ address ul {
 }
 .portfolio-hero-items li {
 	text-align: left;
+}
+.portfolio-hero-items a {
+	border: 1px solid #eeeeee;
 }
