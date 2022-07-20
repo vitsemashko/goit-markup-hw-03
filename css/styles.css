@@ -447,6 +447,8 @@ address ul {
 .portfolio-hero-items {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	padding-bottom: 94px;
 }
 .portfolio-hero-items img {
@@ -455,6 +457,7 @@ address ul {
 }
 .portfolio-hero-items li {
 	text-align: left;
+	margin-bottom: 15px;
 }
 .portfolio-hero-items a {
 	border: 1px solid #eeeeee;
