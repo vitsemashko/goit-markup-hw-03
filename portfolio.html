@@ -34,40 +34,42 @@
 						<li>
 							<a href="./portfolio.html" class="curent">Портфолио</a>
 						</li>
-						<li><a href="">Контакты</a></li>
+						<li class="site-nav-contacts"><a href="">Контакты</a></li>
 					</ul>
 				</nav>
-				<div class="contacts">
-					<ul class="contacts-list">
-						<li>
-							<a class="contacts-mail" href="mailto:info@devstudio.com"
-								>info@devstudio.com</a
-							>
-						</li>
-						<li>
-							<a class="contacts-phone" href="tel:+380961111111"
-								>+38 096 111 11 11</a
-							>
-						</li>
-					</ul>
-				</div>
+				<ul class="contacts-list">
+					<li>
+						<a class="contacts-mail" href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						>
+					</li>
+					<li>
+						<a class="contacts-phone" href="tel:+380961111111"
+							>+38 096 111 11 11</a
+						>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
 			<!--Filter-->
-			<section class="filter">
+			<section class="filter section">
 				<div class="container">
 					<h2 class="visually-hidden" class="filter-title">Фильтр</h2>
 					<ul class="btn-group">
-						<li><button class="portfolio-btn" type="button">Все</button></li>
-						<li>
+						<li class="filter-item">
+							<button class="portfolio-btn" type="button">Все</button>
+						</li>
+						<li class="filter-item">
 							<button class="portfolio-btn" type="button">Веб-сайты</button>
 						</li>
-						<li>
+						<li class="filter-item">
 							<button class="portfolio-btn" type="button">Приложения</button>
 						</li>
-						<li><button class="portfolio-btn" type="button">Дизайн</button></li>
-						<li>
+						<li class="filter-item">
+							<button class="portfolio-btn" type="button">Дизайн</button>
+						</li>
+						<li class="filter-item">
 							<button class="portfolio-btn" type="button">Маркетинг</button>
 						</li>
 					</ul>
@@ -81,8 +83,10 @@
 									alt="три карточки на экране ноутбука"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Технокряк</h2>
-								<p class="portfolio-hero-text">Веб-сайт</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Технокряк</h2>
+									<p class="portfolio-hero-text">Веб-сайт</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -92,10 +96,12 @@
 									alt="два баскетболиста в прыжке"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">
-									Постер New Orlean vs Golden Star
-								</h2>
-								<p class="portfolio-hero-text">Дизайн</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">
+										Постер New Orlean vs Golden Star
+									</h2>
+									<p class="portfolio-hero-text">Дизайн</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -105,8 +111,10 @@
 									alt="эмблема рыба головой вверх"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Ресторан Seafood</h2>
-								<p class="portfolio-hero-text">Приложение</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Ресторан Seafood</h2>
+									<p class="portfolio-hero-text">Приложение</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -116,8 +124,10 @@
 									alt="наушники"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Проект Prime</h2>
-								<p class="portfolio-hero-text">Маркетинг</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Проект Prime</h2>
+									<p class="portfolio-hero-text">Маркетинг</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -127,8 +137,10 @@
 									alt="белая побольше коробка и кирпичного цвета коробка поменьше"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Проект Boxes</h2>
-								<p class="portfolio-hero-text">Приложение</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Проект Boxes</h2>
+									<p class="portfolio-hero-text">Приложение</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -138,8 +150,12 @@
 									alt="монитор с изображением на экране"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Inspiration has no Borders</h2>
-								<p class="portfolio-hero-text">Веб-сайт</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">
+										Inspiration has no Borders
+									</h2>
+									<p class="portfolio-hero-text">Веб-сайт</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -149,8 +165,10 @@
 									alt="журнал"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Издание Limited Edition</h2>
-								<p class="portfolio-hero-text">Дизайн</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Издание Limited Edition</h2>
+									<p class="portfolio-hero-text">Дизайн</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -160,8 +178,10 @@
 									alt="бирка"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Проект LAB</h2>
-								<p class="portfolio-hero-text">Маркетинг</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Проект LAB</h2>
+									<p class="portfolio-hero-text">Маркетинг</p>
+								</div>
 							</a>
 						</li>
 						<li>
@@ -171,8 +191,10 @@
 									alt="печатают на ноутбуке"
 									width="370"
 								/>
-								<h2 class="portfolio-hero-title">Growing Business</h2>
-								<p class="portfolio-hero-text">Приложение</p>
+								<div class="portfolio-hero-title-and-text">
+									<h2 class="portfolio-hero-title">Growing Business</h2>
+									<p class="portfolio-hero-text">Приложение</p>
+								</div>
 							</a>
 						</li>
 					</ul>
@@ -181,26 +203,30 @@
 		</main>
 		<footer>
 			<div class="container">
-				<a class="logo-link" href="" lang="en"
+				<a class="logo-link-footer" href="" lang="en"
 					><span class="logo-one">Web</span
 					><span class="logo-second">Studio</span></a
 				>
 				<address>
 					<ul>
-						<li>
+						<li class="footer-address-item">
 							<a
-								class="physical-address"
+								class="physical-address footer-address-link"
 								href="https://goo.gl/maps/bM6Af7gsELZ9MnHW7"
 								target="_blank"
 								rel="nofollow noopener noreferrer"
 								>г. Киев, пр-т Леси Украинки, 26
 							</a>
 						</li>
-						<li>
-							<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<li class="footer-address-item">
+							<a class="footer-address-link" href="mailto:info@devstudio.com"
+								>info@devstudio.com</a
+							>
 						</li>
-						<li>
-							<a href="tel:+380961111111">+38 096 111 11 11</a>
+						<li class="footer-address-item">
+							<a class="footer-address-link" href="tel:+380961111111"
+								>+38 096 111 11 11</a
+							>
 						</li>
 					</ul>
 				</address>
