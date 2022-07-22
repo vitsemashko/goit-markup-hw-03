@@ -142,17 +142,19 @@ header {
 	margin-bottom: 20px;
 }
 /*Site-nav*/
+*.site-nav {
+	display: flex;
+}
 .site-nav-list {
 	display: flex;
 	gap: 30px;
-	margin-right: auto;
 }
 .contacts-list {
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
 }
-.site-nav a {
+.site-nav-list a {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -161,17 +163,14 @@ header {
 	color: var(--primary-color);
 	padding: 32px 0;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav-list a:hover,
+.site-nav-list a:focus {
 	color: var(--accent-color);
 }
-.site-nav .curent {
+.site-nav-list .curent {
 	color: var(--accent-color);
 }
 /*Contacts*/
-.contacts-list {
-	margin-left: auto;
-}
 .contacts-mail,
 .contacts-phone {
 	padding: 32px 0;
@@ -244,12 +243,12 @@ header {
 }
 .features-list {
 	display: flex;
+	gap: 30px;
+	justify-content: space-between;
 }
 .features-item {
 	width: 270px;
 	height: 101px;
-	display: flex;
-	gap: 30px;
 }
 .features-text {
 	font-size: 14px;
@@ -274,7 +273,7 @@ header {
 /*What do we do*/
 .what-do-we-do {
 	text-align: center;
-	padding: 0;
+	padding-bottom: 50px;
 }
 .what-do-we-do-title {
 	font-style: normal;
@@ -284,18 +283,15 @@ header {
 	letter-spacing: 0.03em;
 	color: var(--primary-color);
 
-	width: 376px;
-	margin: auto;
-	display: inline;
 	margin-bottom: 50px;
 }
 .what-do-we-do-list li {
+	display: block;
 	width: calc((100% - 60px) / 3);
 }
 .what-do-we-do-list {
 	display: flex;
 	gap: 30px;
-	margin-top: 50px;
 }
 /*Team*/
 .team {
@@ -303,9 +299,9 @@ header {
 	text-align: center;
 }
 .team-list {
+	padding-top: 50px;
 	display: flex;
 	gap: 30px;
-	margin-top: 50px;
 }
 .team-title {
 	font-style: normal;
@@ -316,7 +312,7 @@ header {
 	color: var(--primary-color);
 
 	width: 264px;
-	margin: auto;
+
 	display: inline;
 	margin-bottom: 50px;
 }
@@ -442,7 +438,6 @@ address a:focus {
 }
 .portfolio-hero-title-and-text {
 	padding: 20px 24px;
-	border-left: 1px solid var(--portfolio-border-color);
-	border-right: 1px solid var(--portfolio-border-color);
-	border-bottom: 1px solid var(--portfolio-border-color);
+	border: 1px solid var(--portfolio-border-color);
+	border-top: none;
 }
