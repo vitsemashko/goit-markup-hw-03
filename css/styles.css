@@ -240,6 +240,7 @@ header {
 /*Features*/
 .features {
 	text-align: center;
+	padding-bottom: 0;
 }
 .features-list {
 	display: flex;
@@ -273,7 +274,7 @@ header {
 /*What do we do*/
 .what-do-we-do {
 	text-align: center;
-	padding-bottom: 50px;
+	padding-bottom: 94px;
 }
 .what-do-we-do-title {
 	font-style: normal;
@@ -297,9 +298,9 @@ header {
 .team {
 	background-color: var(--bcg-color-four);
 	text-align: center;
+	padding-bottom: 94px;
 }
 .team-list {
-	padding-top: 50px;
 	display: flex;
 	gap: 30px;
 }
@@ -311,9 +312,6 @@ header {
 	letter-spacing: 0.03em;
 	color: var(--primary-color);
 
-	width: 264px;
-
-	display: inline;
 	margin-bottom: 50px;
 }
 .team-item {
